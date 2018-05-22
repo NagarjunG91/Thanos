@@ -43,3 +43,24 @@ while True:
         break
     else:
         continue
+
+
+def atm(self, amount):
+    if self.balance - amount < self.minimum_bal:
+        print('no balance')
+    else:
+        self.balance -= amount
+        print('new balance after ATM withdraw is {}'.format(self.balance))
+    return self.balance
+
+
+newaccount.memo = atm
+
+e = input('Do you want ATM withdraw (Y/N) :')
+if e == 'Y':
+    g = int(input('Please enter withdrawal amt: '))
+    newaccount.memo(newaccount, g)
+
+
+
+
