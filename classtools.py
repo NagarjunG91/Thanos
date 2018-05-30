@@ -24,6 +24,6 @@ if __name__ == '__main__':
     class ST (TopTest):
         pass
 
-X,Y = (TopTest(), ST())
-print(X)
-print(Y)
+    X,Y = (TopTest(), ST())
+    print(X)
+    print(Y)
