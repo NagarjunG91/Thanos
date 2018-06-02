@@ -40,20 +40,20 @@ class Tester:
     def __repr__(self):
         return '%s' % self.mem
 
+if __name__ == '__main__':
+    bob = Person('bob smith')
+    bob.salary = 10000
+    sue = Person('Sue Jones',salary=10000)
+    sue.giveraise(.1)
+    k = bob.lastname()
+    sue.job = 'dev'
+    mary = Person('mary kom', salary=10000, job= 'test')
+    sam = Person('Sam Winchester', salary=20000, job= 'testLead')
+    dev=Development(bob, sue)
+    dev.giveRaise(.1)
+    print(dev)
+    dev.addMember('dog')
+    print(dev)
 
-bob = Person('bob smith')
-bob.salary = 10000
-sue = Person('Sue Jones',salary=10000)
-sue.giveraise(.1)
-k = bob.lastname()
-sue.job = 'dev'
-mary = Person('mary kom', salary=10000, job= 'test')
-sam = Person('Sam Winchester', salary=20000, job= 'testLead')
-dev=Development(bob, sue)
-dev.giveRaise(.1)
-print(dev)
-dev.addMember('dog')
-print(dev)
-
-test= Tester(mary, sam)
-print(test)
+    test= Tester(mary, sam)
+    print(test)
