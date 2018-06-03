@@ -22,8 +22,9 @@ i cant escape this reality
 f = open('poem.txt', 'w')
 f.write(poem)
 f.close()
+# rt is read text can  be only r
 
-with open('poem.txt', 'r') as f:
+with open('poem.txt', 'rt') as f:
     for line in f:
         print(line, end='')
 

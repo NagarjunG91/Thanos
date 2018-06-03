@@ -16,3 +16,4 @@ if __name__ == '__main__':
     A.offboard(Sam)
     print('Samoff object {}'.format(A.obj))
     print('Capacity new {}'.format(A.capacity()))
+
