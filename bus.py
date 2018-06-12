@@ -2,7 +2,6 @@
 class Bus:
     def __init__(self, count):
         self.count = count
-        self.peopleinbus = 0
         self.obj = []
 
     def capacity(self):
